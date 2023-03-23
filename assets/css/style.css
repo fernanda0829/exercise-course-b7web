@@ -449,9 +449,24 @@ footer .footer-area-item .widget-tittle-text {
   background-color: #39aae1;
 }
 
-/* Responsive */
+/* Responsividade */
 
-@media (max-width: 600px) {
+/* Para telas pequenas proporção de (992px até 1198px) */
+@media (max-widht: 1199px) {
+  .container {
+    width: 920px;
+  }
+
+  header .logo img {
+    max-width: 182px;
+  }
+
+  header .menu nav a {
+    font-size: 12px;
+  }
+}
+
+/* @media (max-width: 600px) {
   .banner-headline {
     padding: 20px;
   }
@@ -514,4 +529,4 @@ footer .footer-area-item .widget-tittle-text {
     flex-direction: column;
     justify-content: space-around;
   }
-}
+} */
