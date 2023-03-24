@@ -11,6 +11,21 @@
     ></script>
     <link rel="stylesheet" href="assets/css/reset.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
+    <script>
+      window.onload = function () {
+        document
+          .querySelector(".menu-mobile")
+          .addEventListener("click", function () {
+            if (
+              document.querySelector(".menu nav ul").style.display == "flex"
+            ) {
+              document.querySelector(".menu nav ul").style.display = "none";
+            } else {
+              document.querySelector(".menu nav ul").style.display = "flex";
+            }
+          });
+      };
+    </script>
   </head>
   <body>
     <header id="header">
@@ -104,7 +119,7 @@
       </div>
     </section>
     <section id="content">
-      <div class="container">
+      <div class="container flex-direction">
         <section class="content-news">
           <div class="widget">
             <div class="widget-tittle">
@@ -293,34 +308,39 @@
                 <div class="widget-tittle-bar"></div>
               </div>
               <div class="widget-body">
-                It is a long established fact that a reader will be distracted
-                by the readable content of a page when looking at its layout.
-                <address class="contact-area">
-                  <div class="info">
-                    Medicenter Clinic<br />
-                    33 Farlane Street<br />
-                    Kellor East<br />
-                    VIC 3033, Austrália<br />
+                <div class="body-flex">
+                  <p class="description-area">
+                    It is a long established fact that a reader will be
+                    distracted by the readable content of a page when looking at
+                    its layout.
+                  </p>
+                  <address class="contact-area">
+                    <div class="info">
+                      Medicenter Clinic<br />
+                      33 Farlane Street<br />
+                      Kellor East<br />
+                      VIC 3033, Austrália<br />
+                    </div>
+                    <div class="contact">
+                      +123 999 999<br />
+                      +123 666 666<br />
+                      <a class="email">medicenter@contato.com</a>
+                    </div>
+                  </address>
+                  <div class="midias">
+                    <a class="facebook" href="">
+                      <i class="fa-brands fa-square-facebook"></i>
+                    </a>
+                    <a class="twitter" href="">
+                      <i class="fa-brands fa-square-twitter"></i>
+                    </a>
+                    <a class="instagram" href="">
+                      <i class="fa-brands fa-square-instagram"></i>
+                    </a>
+                    <a class="email" href="">
+                      <i class="fa-sharp fa-solid fa-envelope"></i>
+                    </a>
                   </div>
-                  <div class="contact">
-                    +123 999 999<br />
-                    +123 666 666<br />
-                    <a class="email">medicenter@contato.com</a>
-                  </div>
-                </address>
-                <div class="midias">
-                  <a class="facebook" href="">
-                    <i class="fa-brands fa-square-facebook"></i>
-                  </a>
-                  <a class="twitter" href="">
-                    <i class="fa-brands fa-square-twitter"></i>
-                  </a>
-                  <a class="instagram" href="">
-                    <i class="fa-brands fa-square-instagram"></i>
-                  </a>
-                  <a class="email" href="">
-                    <i class="fa-sharp fa-solid fa-envelope"></i>
-                  </a>
                 </div>
               </div>
             </div>
