@@ -2,7 +2,7 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-header {
+#header {
   display: flex;
   justify-content: center;
   height: 120px;
@@ -14,12 +14,12 @@ header {
   width: 990px;
 }
 
-.logo {
+#header .logo {
   display: flex;
   align-items: center;
 }
 
-.menu {
+#header .menu {
   display: flex;
   align-items: center;
 }
@@ -451,18 +451,126 @@ footer .footer-area-item .widget-tittle-text {
 
 /* Responsividade */
 
-/* Para telas pequenas proporção de (992px até 1198px) */
-@media (max-widht: 1199px) {
-  .container {
+/* telas pequenas 992px até 1198px */
+
+@media (max-width: 1199px) {
+  .container,
+  #banner .container-column {
     width: 920px;
   }
 
-  header .logo img {
+  #header {
+    height: 108px;
+  }
+
+  #header .logo img {
     max-width: 182px;
   }
 
-  header .menu nav a {
+  #header .menu nav a {
     font-size: 12px;
+  }
+
+  #banner .banner-headline .banner-head-title {
+    font-size: 63px;
+    max-width: 315px;
+  }
+
+  #banner .banner-headline .banner-head-desc {
+    font-size: 18px;
+    max-width: 315px;
+    margin-top: 27px;
+    line-height: 27px;
+  }
+}
+
+/* tablets de 768px até 991px */
+@media (max-width: 991px) {
+  .container,
+  #banner .container-column {
+    width: 730px;
+  }
+
+  #header {
+    height: 87px;
+  }
+
+  #header .logo img {
+    max-width: 146px;
+  }
+
+  #header .menu ul {
+    display: none;
+  }
+
+  #banner {
+    height: 536px;
+  }
+
+  #banner .banner-options {
+    height: auto;
+  }
+
+  #banner .banner-headline .banner-head-title {
+    font-size: 50px;
+    max-width: 252px;
+  }
+
+  #banner .banner-headline .banner-head-desc {
+    font-size: 14px;
+    max-width: 252px;
+    margin-top: 22px;
+    line-height: 21px;
+  }
+
+  #banner .options1,
+  .options2,
+  .options3 {
+    padding: 20px;
+  }
+
+  #banner .options-headline .options-head-tittle {
+    font-size: 16px;
+  }
+
+  #banner .options-description .options-desc {
+    font-size: 12px;
+    margin: 16px 0;
+    line-height: 18px;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+  #content .content-sidebar .widget .widget-body .square {
+    width: 116px;
+    height: 116px;
+  }
+
+  #content .content-sidebar .widget .widget-body .contacts {
+    padding-bottom: 50px;
+  }
+
+  #footer .footer-menu a {
+    padding: 16px;
+  }
+
+  #footer .footer-menu a .fm-1-tittle,
+  .fm-2-tittle,
+  .fm-3-tittle {
+    font-size: 18px;
+  }
+
+  #footer .footer-menu .fm-1-description,
+  .fm-2-description,
+  .fm-3-description {
+    font-size: 12px;
+    margin: 16px 0;
+  }
+
+  #footer .footer-area {
+    flex-direction: column;
   }
 }
 
