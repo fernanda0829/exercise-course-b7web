@@ -467,6 +467,10 @@ nav a:hover {
     max-width: 182px;
   }
 
+  #header .menu nav {
+    display: block;
+  }
+
   #header .menu nav a {
     font-size: 12px;
   }
